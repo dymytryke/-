@@ -4,3 +4,6 @@
 Код: [Лаб 1](lr1)
 <br>Звіт: [Звіт з лабораторної 1](lr1/ІА_12_Оверчук_Дмитро_Лаб1.pdf)
 <br>Відео захисту: [Захист лаб 1](https://drive.google.com/file/d/1Og3VTH8iTAVQAYoNboklHvIDd8pWdqtz/view?usp=sharing)
+
+# Лабраторна 2
+Код: [Лаб 2](lr2)
