@@ -3,7 +3,6 @@ from sklearn.model_selection import train_test_split
 from torch.utils.data import TensorDataset, DataLoader
 import torch
 
-# Завантаження і обробка даних
 def load_dataset():
     """
     Завантаження датасету та розділення на ознаки і мітки.
@@ -19,7 +18,7 @@ def split_dataset(X, y, test_ratio=0.2):
     """
     Розділення даних на тренувальний і тестовий набори.
     """
-    return train_test_split(X, y, test_size=test_ratio, random_state=42)
+    return train_test_split(X, y, test_size=test_ratio, random_state=50)
 
 
 def prepare_data_loaders():

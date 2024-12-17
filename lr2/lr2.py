@@ -1,6 +1,7 @@
 import torch.optim as optim
 from prep_data import prepare_data_loaders
-from logistic_regression_model import LogisticRegressionModel, compute_logistic_loss, compute_adaboost_loss, compute_binary_crossentropy_loss
+from logistic_regression_model import LogisticRegressionModel, compute_logistic_loss, compute_adaboost_loss, \
+    compute_binary_crossentropy_loss
 from model_training import train_and_evaluate_models
 from plotting import plot_loss_curves
 
@@ -17,7 +18,8 @@ def initialize_models(input_dim):
     }
 
     optimizers = {
-        name: optim.SGD(model.parameters(), lr=0.01) for name, model in models.items()  # Використання SGD
+        # Використання градієнтного спуску. Оптимізатор SGD оновлює ваги моделі у напрямку, що зменшує значення функції втрат.
+        name: optim.SGD(model.parameters(), lr=0.01) for name, model in models.items()
     }
 
     criteria = {

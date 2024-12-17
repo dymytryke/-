@@ -1,6 +1,5 @@
 import matplotlib.pyplot as plt
 
-# Побудова графіків втрат для тренування і тестування
 def plot_loss_curves(loss_histories):
     """
     Візуалізація динаміки втрат для тренувальних і тестових даних.
